@@ -1,0 +1,22 @@
+<% layout('layouts/boil') %>
+<div style="width: 50%; margin: auto;" class="row">
+    <div class="col-6">
+        <div class="card mb-3">
+            <img style="width: 100%; height: 400px;" src="<%= scafe.image%>" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><%= scafe.title%></h5>
+                <p class="card-text"><%= scafe.locality%> , <%= scafe.state%></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-muted">Max Cpacity:- <%= scafe.capacity%></li>
+                <li class="list-group-item">Contact:- <%= scafe.phone%></li>
+            </ul>
+            <div class="card-body">
+                <a class="card-link btn btn-info" href="/cafe/<%=scafe._id%>/book">Book</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+
+    </div>
